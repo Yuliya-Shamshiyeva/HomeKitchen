@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HomeKitchen</string>
+
+    <string name="cook_name_short">Крупчатникова Владислава</string>
+    <string name="cook_name_long">Крупчатникова Владислава Георгиевна</string>
+    <string name="cook_rating">4.7</string>
+
+    <string name="kitchens">Кухни:</string>
+    <string name="kitchens_example">Кухни: восточная, азиатская, европейкая, закуски и ещё 3</string>
+    <string name="price">Цены от 2700 тг</string>
+
+    <string name="dish_card_name">Донер</string>
+    <string name="number_cooks_prepare">56 поваров</string>
+    <string name="dish_card_price">500 тг — 3 000 тг</string>
+
+    <string name="str_btn_cooks">Повора</string>
+    <string name="str_btn_kitchens">Кухня</string>
+
+    <string name="text_layout_in_development">Макет в разработке</string>
+
+    <string name="text_popular_cooks">Повара недели / Популярные повара</string>
+
+    <string name="home_filter1">По рейтингу</string>
+    <string name="home_filter2">Фильтр</string>
+
+    <string name="nearest_available">Ближайшее доступная дата 21.07</string>
+    <string name="prices_from_to">Цены от 2 000 до 7 000 тг</string>
+    <string name="distance">2 км от вас</string>
+    <string name="separator">•</string>
+    <string name="address">Караганда, Гоголя 56</string>
+    <string name="specifics">Специфика: халяль</string>
+    <string name="select_order_date">Выбрать дату заказа</string>
+    <string name="menu">Меню (54)</string>
+    <string name="comments">Отзывы (36)</string>
+</resources>

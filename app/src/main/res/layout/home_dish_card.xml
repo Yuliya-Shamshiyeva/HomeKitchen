@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp">
+
+    <FrameLayout
+        android:id="@+id/popular_cook_card"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/style_popular_cook_card">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/dish_card_name"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dish_card_name"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_bold"/>
+            <TextView
+                android:id="@+id/number_cooks_prepare"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="@string/number_cooks_prepare"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_medium"/>
+            <TextView
+                android:id="@+id/dish_card_price"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dish_card_price"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_medium"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

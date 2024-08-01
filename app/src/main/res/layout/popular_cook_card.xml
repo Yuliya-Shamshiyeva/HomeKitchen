@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/popular_cook_card"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/style_popular_cook_card">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cook_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_cook"
+            app:shapeAppearanceOverlay="@style/ShapeImgCorner16" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/style_popular_cook_card_name">
+
+            <TextView
+                android:id="@+id/cook_name"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cook_name_short"
+                android:textSize="16dp"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/inter_medium"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/style_popular_cook_card_rating"
+            android:layout_gravity="end"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icon_star"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/cook_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cook_rating"
+                android:textSize="14dp"
+                android:textColor="@color/white_auxiliary"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/inter_regular"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/cook_card"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:background="@drawable/style_cook_card"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/style_circle_img">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/cook_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/img_cook"
+                        app:shapeAppearanceOverlay="@style/ShapeImgCorner50" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/icon_star" />
+
+                        <TextView
+                            android:id="@+id/cook_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/cook_rating"
+                            android:textColor="@color/black60"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp">
+
+                        <TextView
+                            android:id="@+id/cook_name"
+                            android:layout_width="224dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cook_name_long"
+                            android:textSize="16dp"
+                            android:textColor="@color/black90"
+                            android:fontFamily="@font/inter_medium"/>
+
+                        <TextView
+                            android:id="@+id/kitchens"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kitchens_example"
+                            android:textSize="14dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black60"
+                            android:fontFamily="@font/inter_regular"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black10"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/prrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:gravity="end"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black90"/>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
